@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderMatcher>        
+    <Name>localhost</Name>    
+    <FixAcceptor ConfigFile="etc/OrderMatcher.fix.cfg"/>    
+    <BsonAcceptor Port="7999"/>
+    
+    <Agents>
+            <Agent Name="inverse" Implementation="ordermatcher.agents.InverseOrder" Active="false"/>
+            <!--Agent Name="real" Implementation="ordermatcher.agents.MarketValueOrder" Host="500010271277-U" Active="true"/-->
+    </Agents>
+    
+    <!--Database Name="AAS_DB" ConnString="mongodb://localhost" DatabaseName="aas" /-->
+    
+</OrderMatcher>

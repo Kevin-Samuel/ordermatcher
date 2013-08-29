@@ -1,0 +1,135 @@
+20130404-14:03:19: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-14:03:19: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-14:03:20: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:46976
+20130404-14:03:20: Acceptor heartbeat set to 30 seconds
+20130404-14:03:20: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-14:03:20: Received logon
+20130404-14:03:20: Responding to Logon request
+20130404-14:10:27: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-14:10:27: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-14:10:44: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:42218
+20130404-14:10:44: Acceptor heartbeat set to 30 seconds
+20130404-14:10:44: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-14:10:44: Received logon
+20130404-14:10:44: Responding to Logon request
+20130404-14:14:36: Disconnecting: Socket exception (/127.0.0.1:42218): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130404-14:15:03: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-14:15:03: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-14:15:06: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:2067
+20130404-14:15:06: Acceptor heartbeat set to 30 seconds
+20130404-14:15:06: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-14:15:06: Received logon
+20130404-14:15:06: Responding to Logon request
+20130404-14:22:40: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-14:22:40: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-14:22:41: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:8396
+20130404-14:22:41: Acceptor heartbeat set to 30 seconds
+20130404-14:22:41: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-14:22:41: Received logon
+20130404-14:22:41: Responding to Logon request
+20130404-18:31:08: Disconnecting: Socket exception (/127.0.0.1:8396): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130404-18:32:49: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:32:49: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:32:50: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:20718
+20130404-18:32:50: Acceptor heartbeat set to 30 seconds
+20130404-18:32:50: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:32:50: Received logon
+20130404-18:32:50: Responding to Logon request
+20130404-18:35:20: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:35:20: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:35:23: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:20907
+20130404-18:35:23: Acceptor heartbeat set to 30 seconds
+20130404-18:35:23: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:35:23: Received logon
+20130404-18:35:23: Responding to Logon request
+20130404-18:37:37: Disconnecting: Socket exception (/127.0.0.1:20907): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130404-18:37:47: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:37:47: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:37:49: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:56135
+20130404-18:37:49: Acceptor heartbeat set to 30 seconds
+20130404-18:37:49: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:37:49: Received logon
+20130404-18:37:49: Responding to Logon request
+20130404-18:40:12: Disconnecting: Socket exception (/127.0.0.1:56135): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130404-18:41:42: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:41:42: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:41:49: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:21888
+20130404-18:41:49: Acceptor heartbeat set to 30 seconds
+20130404-18:41:49: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:41:49: Received logon
+20130404-18:41:49: Responding to Logon request
+20130404-18:54:18: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:54:18: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:54:20: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:22109
+20130404-18:54:20: Acceptor heartbeat set to 30 seconds
+20130404-18:54:20: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:54:20: Received logon
+20130404-18:54:20: Responding to Logon request
+20130404-18:57:14: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-18:57:14: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-18:57:16: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:43613
+20130404-18:57:16: Acceptor heartbeat set to 30 seconds
+20130404-18:57:16: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-18:57:16: Received logon
+20130404-18:57:16: Responding to Logon request
+20130404-19:06:06: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-19:06:06: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-19:06:09: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:29128
+20130404-19:06:09: Acceptor heartbeat set to 30 seconds
+20130404-19:06:09: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-19:06:09: Received logon
+20130404-19:06:09: Responding to Logon request
+20130404-19:07:46: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-19:07:46: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-19:07:48: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:29301
+20130404-19:07:48: Acceptor heartbeat set to 30 seconds
+20130404-19:07:48: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-19:07:48: Received logon
+20130404-19:07:48: Responding to Logon request
+20130404-19:16:39: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130404-19:16:39: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130404-19:16:40: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:8600
+20130404-19:16:40: Acceptor heartbeat set to 30 seconds
+20130404-19:16:40: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130404-19:16:40: Received logon
+20130404-19:16:40: Responding to Logon request
+20130404-23:59:00: Received logout request
+20130404-23:59:00: No responder, not sending message: 8=FIX.4.49=5935=534=56149=BVMF252=20130404-23:59:00.49356=EXECUTOR310=074
+20130404-23:59:00: Sent logout response
+20130404-23:59:00: Already disconnected: Received logout request
+20130405-00:00:01: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:21820
+20130405-00:00:01: Acceptor heartbeat set to 30 seconds
+20130405-00:00:01: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130405-00:00:01: Received logon
+20130405-00:00:01: Responding to Logon request
+20130409-15:45:17: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130409-15:45:17: Session state is not current; resetting FIX.4.4:BVMF2->EXECUTOR3
+20130409-15:45:17: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130409-15:45:26: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:59758
+20130409-15:45:26: Acceptor heartbeat set to 30 seconds
+20130409-15:45:26: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130409-15:45:26: Received logon
+20130409-15:45:26: Responding to Logon request
+20130409-15:57:44: Disconnecting: Socket exception (/127.0.0.1:59758): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130426-17:55:36: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130426-17:55:36: Session state is not current; resetting FIX.4.4:BVMF2->EXECUTOR3
+20130426-17:55:36: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130426-18:08:02: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:12611
+20130426-18:08:02: Acceptor heartbeat set to 30 seconds
+20130426-18:08:02: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130426-18:08:02: Received logon
+20130426-18:08:02: Responding to Logon request
+20130426-18:16:42: Disconnecting: Socket exception (/127.0.0.1:12611): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130426-18:17:08: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:16353
+20130426-18:17:08: Acceptor heartbeat set to 30 seconds
+20130426-18:17:08: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130426-18:17:08: Received logon
+20130426-18:17:08: Responding to Logon request
+20130426-18:28:58: Disconnecting: Socket exception (/127.0.0.1:16353): java.io.IOException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+20130426-18:29:08: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130426-18:29:08: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130426-18:29:09: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:29826
+20130426-18:29:09: Acceptor heartbeat set to 30 seconds
+20130426-18:29:09: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130426-18:29:09: Received logon
+20130426-18:29:09: Responding to Logon request

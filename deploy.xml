@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OrderMatcher" default="all" basedir=".">
+    
+    <echo level="info">Rebuilding project...</echo>
+    
+    <delete dir="deploy"/>
+    
+    <target name="all">
+         <ant antfile="E:\\sylvio\\work\\projects\\OrderMatcher\\trunk\\src\\OrderMatcher\build.xml" target="clean"/>
+         <ant antfile="E:\\sylvio\\work\\projects\\OrderMatcher\\trunk\\src\\OrderMatcher\build.xml" target="jar"/>
+    </target>
+    
+    <copy todir="deploy/dist">
+        <fileset dir="dist"/>
+    </copy>
+    
+    <copy todir="deploy">
+        <fileset dir="service"/>
+    </copy>
+    
+    <copy todir="deploy/etc">
+        <fileset dir="etc" />
+    </copy>
+    
+    <mkdir dir="deploy/log" />
+        
+    <echo level="info">Project deploy package sucessfully built.</echo>    
+    
+    <echo file="deploy/OrderMatcher.bat">java -jar dist\OrderMatcher.jar</echo> 
+    
+</project>
