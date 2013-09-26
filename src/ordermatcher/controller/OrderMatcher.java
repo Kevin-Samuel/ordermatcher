@@ -3,12 +3,17 @@
  */
 package ordermatcher.controller;
 
+import com.mongodb.DB;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import javax.xml.bind.JAXBException;
+import ordermatcher.domain.SecurityMarket;
 import ordermatcher.domain.Settings;
 import ordermatcher.mina.BsonHandler;
 import ordermatcher.mina.codec.BsonCodecFactory;
@@ -31,7 +36,7 @@ import quickfix.SocketAcceptor;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class OrderMatcher implements Runnable {
     
@@ -43,10 +48,13 @@ public class OrderMatcher implements Runnable {
     private boolean running;
     private Thread server;        
     private IoAcceptor bsonAcceptor;    
-    private Acceptor acceptor;    
+    private Acceptor acceptor;   
+    
+    // book manager handler.
+    public static BookManager bookManager = new BookManager();
     
     // static properties
-    //public static Map<String, String> securitiesMarkets = new HashMap<String, String>();
+    public static Map<String, String> securitiesMarkets = new HashMap<String, String>();
     
     // server settings
     public static Settings settings;
@@ -93,7 +101,7 @@ public class OrderMatcher implements Runnable {
         
     }
     
-    public void startFixAcceptor() throws FileNotFoundException, ConfigError {
+    public void startOrderFixAcceptor() throws FileNotFoundException, ConfigError {
         
         OrderFixAcceptor oma = new OrderFixAcceptor(settings);        
         SessionSettings sessionSettings = new SessionSettings(new FileInputStream(settings.fixAcceptor.configFile));
@@ -106,29 +114,43 @@ public class OrderMatcher implements Runnable {
                 
         acceptor.start();        
     }
+    
+    public void startMarketDataFixAcceptor() throws FileNotFoundException, ConfigError {
+        
+        MarketDataFixAcceptor mda = new MarketDataFixAcceptor(settings);        
+        SessionSettings sessionSettings = new SessionSettings(new FileInputStream(settings.marketDataFixAcceptor.configFile));
+        
+        MessageStoreFactory stf = new FileStoreFactory(sessionSettings);
+        LogFactory lf = new FileLogFactory(sessionSettings);
+        MessageFactory mf = new DefaultMessageFactory();
+        
+        acceptor = new SocketAcceptor(mda, stf, sessionSettings, lf, mf);
+                
+        acceptor.start();        
+    }
 
-//    public void loadData() {
-//        
-//        // connect to AAS database.
-//        MongoDBController mongoCtr = new MongoDBController();
-//        mongoCtr.connect(settings.database);
-//        
-//        // Load ticker symbols.
-//        MongoDBUtil mongoUtil = new MongoDBUtil((DB) mongoCtr.getConnection());        
-//        List<Object> list = mongoUtil.findAll("Security", "ordermatcher.domain.SecurityMarket", null);
-//        
-//        for(Object curr: list) {            
-//            SecurityMarket security = (SecurityMarket) curr;
-//            
-//            security.pack();
-//            
-//            if(security.exchange == null) {
-//                continue;
-//            }
-//            
-//            securitiesMarkets.put(security.security, security.exchange);
-//        }
-//    }
+    public void loadData() {
+        
+        // connect to AAS database.
+        MongoDBController mongoCtr = new MongoDBController();
+        mongoCtr.connect(settings.database);
+        
+        // Load ticker symbols.
+        MongoDBUtil mongoUtil = new MongoDBUtil((DB) mongoCtr.getConnection());        
+        List<Object> list = mongoUtil.findAll("Security", "ordermatcher.domain.SecurityMarket", null);
+        
+        for(Object curr: list) {            
+            SecurityMarket security = (SecurityMarket) curr;
+            
+            security.pack();
+            
+            if(security.exchange == null) {
+                continue;
+            }
+            
+            securitiesMarkets.put(security.security, security.exchange);
+        }
+    }
     
     @Override
     public void run() {
@@ -160,11 +182,21 @@ public class OrderMatcher implements Runnable {
             System.exit(-1);
         }
         
-        // start fix acceptor.        
+        // start order fix acceptor.
         try {
-            startFixAcceptor();
-        } catch (Exception ex) {
-            logger.error("Error starting BSON acceptor, last error: " + ex.getMessage());
+            startOrderFixAcceptor();
+        }
+        catch (Exception ex) {
+            logger.error("Error starting order FIX acceptor, last error: " + ex.getMessage());
+            System.exit(-1);
+        }
+        
+        // start market data fix acceptor.
+        try {
+            startMarketDataFixAcceptor();
+        }
+        catch (Exception ex) {
+            logger.error("Error starting Maket Data acceptor, last error: " + ex.getMessage());
             System.exit(-1);
         }
         

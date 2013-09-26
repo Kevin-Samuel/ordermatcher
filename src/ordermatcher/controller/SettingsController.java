@@ -14,7 +14,7 @@ import ordermatcher.domain.Settings;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class SettingsController {
  

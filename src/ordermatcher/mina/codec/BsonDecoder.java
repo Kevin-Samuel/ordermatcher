@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class BsonDecoder extends CumulativeProtocolDecoder {
     

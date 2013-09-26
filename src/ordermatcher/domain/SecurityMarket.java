@@ -7,7 +7,7 @@ import org.bson.BasicBSONObject;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class SecurityMarket extends BasicBSONObject {
     

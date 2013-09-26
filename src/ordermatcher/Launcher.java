@@ -5,10 +5,8 @@
  */
 package ordermatcher;
 
-import java.io.FileNotFoundException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.xml.bind.JAXBException;
 import ordermatcher.controller.OrderMatcher;
 import org.tanukisoftware.wrapper.WrapperListener;
 

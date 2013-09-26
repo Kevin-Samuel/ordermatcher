@@ -10,7 +10,7 @@ import org.apache.mina.common.IoSession;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public interface BsonCommand {
     void setHandler(BsonHandler handler);

@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class BsonEncoder implements ProtocolEncoder {
     
@@ -38,8 +38,11 @@ public class BsonEncoder implements ProtocolEncoder {
         buffer.put(ob.toByteArray());
         buffer.flip();
         
-        out.write(buffer);
-        out.flush();
+        if(buffer!=null)
+        {            
+            out.write(buffer);
+            out.flush();
+        }
     }
 
     @Override

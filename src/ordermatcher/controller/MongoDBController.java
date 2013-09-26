@@ -1,15 +1,11 @@
 /**
  * Blitz Trading
- *
- * @project Order matcher
  */
 package ordermatcher.controller;
 
 import com.mongodb.DB;
 import com.mongodb.Mongo;
-import com.mongodb.MongoException;
 import com.mongodb.MongoURI;
-import java.net.UnknownHostException;
 import ordermatcher.domain.DatabaseSettings;
 import org.slf4j.LoggerFactory;
 

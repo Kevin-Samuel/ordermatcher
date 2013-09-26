@@ -133,3 +133,27 @@
 20130426-18:29:09: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
 20130426-18:29:09: Received logon
 20130426-18:29:09: Responding to Logon request
+20130830-03:20:30: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130830-03:20:30: Session state is not current; resetting FIX.4.2:BOV->EXECUTOR
+20130830-03:20:30: Created session: FIX.4.2:BOV->EXECUTOR
+20130830-03:24:51: Accepting session FIX.4.2:BOV->EXECUTOR from /127.0.0.1:59459
+20130830-03:24:51: Acceptor heartbeat set to 30 seconds
+20130830-03:24:51: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130830-03:24:51: Received logon
+20130830-03:24:51: Responding to Logon request
+20130830-03:39:47: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130830-03:39:47: Created session: FIX.4.2:BOV->EXECUTOR
+20130830-03:39:55: Accepting session FIX.4.2:BOV->EXECUTOR from /127.0.0.1:59896
+20130830-03:39:55: Acceptor heartbeat set to 30 seconds
+20130830-03:39:55: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130830-03:39:56: Received logon
+20130830-03:39:56: Responding to Logon request
+20130926-11:38:36: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:38:36: Session state is not current; resetting FIX.4.2:BOV->EXECUTOR
+20130926-11:38:36: Created session: FIX.4.2:BOV->EXECUTOR
+20130926-11:39:08: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:39:08: Created session: FIX.4.2:BOV->EXECUTOR
+20130926-11:40:24: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:40:24: Created session: FIX.4.2:BOV->EXECUTOR
+20130926-11:40:48: Session FIX.4.2:BOV->EXECUTOR schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:40:48: Created session: FIX.4.2:BOV->EXECUTOR

@@ -10,7 +10,7 @@ import org.apache.mina.filter.codec.ProtocolEncoder;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class BsonCodecFactory implements ProtocolCodecFactory{
     

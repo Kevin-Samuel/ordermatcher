@@ -1,11 +1,13 @@
 /*
- * Blitz Trading
+ * Bliz Trading
  */
 package ordermatcher.agents;
 
 import java.util.Random;
+import ordermatcher.controller.BookManager;
 import ordermatcher.controller.OrderFixAcceptor;
 import ordermatcher.domain.AgentSettings;
+import ordermatcher.domain.Book;
 import ordermatcher.domain.Order;
 import org.slf4j.LoggerFactory;
 import quickfix.SessionID;
@@ -14,13 +16,14 @@ import quickfix.field.Side;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 public class InverseOrder implements Agent, Runnable {
     
     // properties
     private Order order;
-    private OrderFixAcceptor matcher;
+    private Book book;
+    private BookManager bookManager;
     private SessionID session;
     private AgentSettings settings;
     
@@ -28,12 +31,14 @@ public class InverseOrder implements Agent, Runnable {
     private static org.slf4j.Logger logger = LoggerFactory.getLogger(OrderFixAcceptor.class);
 
     @Override
-    public void onNewOrder(Order order, OrderFixAcceptor matcher, SessionID session, AgentSettings settings) {
+    public void onNewOrder(Order order, BookManager bookManager, SessionID session, AgentSettings settings) {
      
-        this.order = order;
-        this.matcher = matcher;
+        this.order = order;        
+        this.bookManager = bookManager;
         this.session = session;
         this.settings = settings;
+        
+        this.book = bookManager.books.get(order.security);
         
         new Thread(this).start();
     }
@@ -63,15 +68,15 @@ public class InverseOrder implements Agent, Runnable {
         // check if order side is BUY
         if(order.side == Side.BUY) {                    
             newOrder.side = Side.SELL; 
-            matcher.toSell.add(newOrder);
+            book.toSell.add(newOrder);
         }
         else {                    
             // put an inverse order                    
             newOrder.side = Side.BUY;
-            matcher.toBuy.add(newOrder);
+            book.toBuy.add(newOrder);
         }
         try {
-            matcher.matchQueues(session);
+            bookManager.match(book);
         } catch (SessionNotFound ex) {
             logger.error("Session not found to send new order message: " + ex.getMessage());
         }

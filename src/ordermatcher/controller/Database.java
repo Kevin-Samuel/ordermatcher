@@ -1,12 +1,11 @@
 /**
  * Blitz Trading
  *
- * @project Order matcher
+ * @project StrategyServer
  * @date 11/07/2012
  */
 package ordermatcher.controller;
 
-import java.util.Map;
 import ordermatcher.domain.DatabaseSettings;
 
 /**

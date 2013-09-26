@@ -2,7 +2,9 @@
 <OrderMatcher>        
     <Name>localhost</Name>    
     <FixAcceptor ConfigFile="etc/OrderMatcher.fix.cfg"/>    
+    <MarketDataAcceptor ConfigFile="etc/MarketData.fix.cfg"/>
     <BsonAcceptor Port="7999"/>
+    
     
     <Agents>
             <Agent Name="inverse" Implementation="ordermatcher.agents.InverseOrder" Active="false"/>

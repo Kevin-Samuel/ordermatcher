@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
 @XmlRootElement(name = "OrderMatcher")
 public class Settings {
@@ -23,6 +23,9 @@ public class Settings {
     
     @XmlElement(name="FixAcceptor")
     public FixAcceptorSettings fixAcceptor;
+    
+    @XmlElement(name="MarketDataAcceptor")
+    public MarketDataFixAcceptorSettings marketDataFixAcceptor;
     
     @XmlElement(name="Database")
     public DatabaseSettings database;

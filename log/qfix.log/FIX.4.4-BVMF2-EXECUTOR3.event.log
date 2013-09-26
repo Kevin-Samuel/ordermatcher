@@ -133,3 +133,27 @@
 20130426-18:29:09: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
 20130426-18:29:09: Received logon
 20130426-18:29:09: Responding to Logon request
+20130830-03:20:31: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130830-03:20:31: Session state is not current; resetting FIX.4.4:BVMF2->EXECUTOR3
+20130830-03:20:31: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130830-03:24:51: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:59456
+20130830-03:24:51: Acceptor heartbeat set to 30 seconds
+20130830-03:24:51: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130830-03:24:51: Received logon
+20130830-03:24:51: Responding to Logon request
+20130830-03:39:48: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130830-03:39:48: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130830-03:39:55: Accepting session FIX.4.4:BVMF2->EXECUTOR3 from /127.0.0.1:59893
+20130830-03:39:55: Acceptor heartbeat set to 30 seconds
+20130830-03:39:55: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20130830-03:39:55: Received logon
+20130830-03:39:55: Responding to Logon request
+20130926-11:38:37: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:38:37: Session state is not current; resetting FIX.4.4:BVMF2->EXECUTOR3
+20130926-11:38:37: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130926-11:39:09: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:39:09: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130926-11:40:24: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:40:24: Created session: FIX.4.4:BVMF2->EXECUTOR3
+20130926-11:40:49: Session FIX.4.4:BVMF2->EXECUTOR3 schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20130926-11:40:49: Created session: FIX.4.4:BVMF2->EXECUTOR3

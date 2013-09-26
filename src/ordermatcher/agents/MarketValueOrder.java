@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import ordermatcher.controller.BookManager;
 import ordermatcher.controller.OrderFixAcceptor;
 import ordermatcher.controller.OrderMatcher;
 import ordermatcher.domain.AgentSettings;
@@ -46,7 +47,7 @@ public class MarketValueOrder implements Agent {
     
 
     @Override
-    public void onNewOrder(Order order, OrderFixAcceptor matcher, SessionID session, AgentSettings settings) {
+    public void onNewOrder(Order order, BookManager bookManager, SessionID session, AgentSettings settings) {
         
         if(settings.host!=null && !settings.host.isEmpty()) {
             host = settings.host;

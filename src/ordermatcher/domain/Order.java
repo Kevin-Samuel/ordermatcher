@@ -7,9 +7,9 @@ import quickfix.SessionID;
 
 /**
  *
- * @author Sylvio Azevedo - sylvio.azevedo@blitz-trading.com
+ * @author Sylvio Azevedo <sylvio.azevedo@blitz-trading.com>
  */
-public class Order implements Comparable<Order>, Cloneable {
+public class Order implements Comparable<Order>, Cloneable {    
     
     // properties
     public String orderId;
